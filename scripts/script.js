@@ -13,5 +13,5 @@ function Resultado () {
     if (imc.entre(30, 39.9)) document.getElementById("esse").value='Aparentemente você é o Andre Marques antes da lipo';
     if (imc.entre(40, 50)) document.getElementById("esse").value="No way bro, you're dead";
     if (value = toString) y.style.display="none";
-    if (value = toString) document.getElementById("essa").value="Seu índice de massa corporal é de: "+imc;
+    if (value = toString) document.getElementById("essa").value="Seu índice de massa corporal é de: "+imc.toFixed(2);
 }
