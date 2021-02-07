@@ -3,6 +3,7 @@ Number.prototype.entre = function (inicio, fim) {
     return this >= inicio && this <= fim
 }
 function Resultado () {
+    let y = document.getElementById("form");
     let peso = document.getElementById("peso").value;
     let altura = document.getElementById("altura").value;
     let imc = peso / ( altura * altura);
@@ -11,4 +12,6 @@ function Resultado () {
     if (imc.entre(25, 29.9)) document.getElementById("esse").value='Massa magra ou gordura? você pode virar um bolinho';
     if (imc.entre(30, 39.9)) document.getElementById("esse").value='Aparentemente você é o Andre Marques antes da lipo';
     if (imc.entre(40, 50)) document.getElementById("esse").value="No way bro, you're dead";
+    if (value = toString) y.style.display="none";
+    if (value = toString) document.getElementById("essa").value="Seu índice de massa corporal é de: "+imc;
 }
